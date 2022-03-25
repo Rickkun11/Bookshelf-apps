@@ -13,6 +13,17 @@
     </header>
 
     <main>
+        <!-- Search -->        
+        <section>
+            <h1>Cari Buku (opsional)</h1>
+            <div class="search_bar">
+                <label for="searchBar">Judul</label>
+                <input id="searchBar" type="text">
+                <button id="searchBtn">Cari</button>
+            </div>
+        </section>
+
+        <!-- Detail Buku -->
         <section class="input_section">
             <h1>Detail Buku</h1>
             <form id="input_book_detail">
@@ -30,9 +41,20 @@
                     <label for="BookYear"></label>
                     <input id="BookYear" type="text" required>
                 </div>
+                <div id="checklist">
+                    <label for="check_read"></label>
+                    <input id="check_read" type="checkbox">
+                </div>
+
+                <div id="btn-submit">
+                    <button id="submit_shelf">Masukkan Pada Rak</button>
+                </div>
             </form>
         </section>
 
+        <section id="rak_buku">
+            <h1>Rak Selesai Baca</h1>
+        </section>
     </main> 
     
 </body>

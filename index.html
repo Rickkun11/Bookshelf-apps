@@ -7,17 +7,24 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Bookshelf Apps</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link rel="stylesheet" href="/style/style.css" />
+        <title>AnimeBookshelf Riky</title>
+        <link rel="stylesheet" href="./style/style.css" />
     </head>
     <body>
         <header class="head_bar">
-        <h1 class="head_bar__title">Bookshelf Apps</h1>
+        <h1 class="head_bar__title">
+            <span>Anime</span>BookShelf
+        </h1>
+        
+        <section class="search_section">
+            <form id="searchBook">
+            <input id="searchBookTitle" type="text" placeholder="Cari Judul Anime .." />
+            <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
         </header>
         <main>
         <section class="input_section">
-            <h2>Masukkan Buku Baru</h2>
             <form autocomplete="off" id="inputBook">
             <div class="input">
                 <label for="inputBookTitle">Judul</label>
@@ -41,15 +48,6 @@
             </form>
         </section>
 
-        <section class="search_section">
-            <h2>Cari Buku (Opsional)</h2>
-            <form id="searchBook">
-            <label for="searchBookTitle">Judul</label>
-            <input id="searchBookTitle" type="text" />
-            <button id="searchSubmit" type="submit">Cari</button>
-            </form>
-        </section>
-
         <section class="book_shelf">
             <h2>Belum selesai dibaca</h2>
 
@@ -66,7 +64,6 @@
             </div>
         </section>
         </main>
-
-<script src="/js/main.js"></script>
 </body>
+<script src="./js/main.js"></script>
 </html>

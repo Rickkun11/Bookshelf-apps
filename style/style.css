@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body,
 input,
 button {
     font-family: 'Open Sans', sans-serif;
+    background-color: #05595B;
 }
 
 input,
@@ -16,17 +16,23 @@ button {
 }
 
 .head_bar {
-    padding: 12px;
+    padding: 5px 5px 5px 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
-    color: white;
+    justify-content: space-between;
+    background-color: #062C30;
+    color: #F5F5F5;
+}
+
+.head_bar>.head_bar__title>span {
+    background-color: #062C30;
+    color: #0fc4c7;
 }
 
 main {
+    display: flex;
     max-width: 800px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 16px;
 
@@ -34,27 +40,26 @@ main {
 
 .input_section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
 }
 
 .input_section>h2 {
+    display: flex;
     text-align: center;
-    color: cornflowerblue;
+    color: #E2D784;
 }
 
 .input_section>form>.input {
     margin: 8px 0;
+    display: flex;
 }
 
 .input_section>form>button {
-    background-color: cornflowerblue;
-    color: white;
+    background-color: #E2D784;
+    color: #F5F5F5;
     border: 0;
     border-radius: 5px;
-    display: flex;
     justify-content: center;
     width: 100%;
     padding: 8px;
@@ -70,13 +75,15 @@ main {
     width: 100%;
     padding: 8px;
     border-radius: 5px;
+
+    color: #F5F5F5;
 }
 
-
-
 .input_section>form>.input>label {
-    color: cornflowerblue;
+    color: #0fc4c7;
     font-weight: bold;
+    margin: 0px 74px 0px 0px;
+    width: 10px
 }
 
 .input_section>form>.input_inline {
@@ -86,7 +93,7 @@ main {
 }
 
 .input_section>form>.input_inline>label {
-    color: cornflowerblue;
+    color: #0fc4c7;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -97,19 +104,12 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.search_section>h2 {
-    color: cornflowerblue;
 }
 
 .search_section>form {
     padding: 16px;
     width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr 0.5fr;
+    display: flex;
     grid-gap: 10px;
 }
 
@@ -124,7 +124,8 @@ main {
 }
 
 .search_section>form>button {
-    background-color: cornflowerblue;
+    background-color: #05595B;
+    width: 100px;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -133,45 +134,22 @@ main {
 
 .book_shelf {
     margin: 16px 0 0 0;
-    border: 1px solid black;
     padding: 16px;
-    border-radius: 10px;
-}
-
-.book_shelf>h2 {
-    color: cornflowerblue;
-}
-
-.book_shelf>.book_list {
-    padding: 16px;
+    border: 1px solid white;
 }
 
 .book_shelf>.book_list>.book_item {
     padding: 8px 16px 16px 16px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 5px;
     margin: 10px 0;
-}
-
-.book_shelf>.book_list>.book_item>h3,
-p {
-    margin: 8px 0;
 }
 
 .book_shelf>.book_list>.book_item>.action>button {
     border: 0;
     padding: 5px;
     margin: 0 5px 0 0;
+    width: 70px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.book_shelf>.book_list>.book_item>.action>.green {
-    background-color: darkgreen;
-    color: white;
-}
-
-.book_shelf>.book_list>.book_item>.action>.red {
-    background-color: darkred;
-    color: white;
 }
